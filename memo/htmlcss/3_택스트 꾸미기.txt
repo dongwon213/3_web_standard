@@ -1,0 +1,109 @@
+▷ 텍스트 스타일링
+	텍스트와 관련된 스타일을 먹이는 속성, 값에 대해서 알아보자!
+
+▶ 단위
+	절대 단위 : px
+	상대 단위	
+		- em : 부모 요소의 택스트 크기에 대한 상대적인 크기
+		- rem : html 태그의 텍스트 크기에 대한 상대적인 크기
+		- vw : 뷰 포트의 너비를 기준으로 한 상대적인 크기
+		- vh : 뷰 포트의 높이를 기준으로 한 상대적인 크기
+		- % : 상위 요소의 속성 값에 대한 상대적인 크기
+
+▶ 색 결정
+	1) yellow, aqua, pink, red 등 단어 넣기
+	2) rgb(255, 255, 255) -> rgb 값으로 색 지정
+	3) rgba(255, 255, 255, 0.0) -> 투명도까지 지정
+	4) #ffffff -> HEX표기법
+
+▶ font-family
+	글꼴을 지정할 수 있다
+	글꼴 유형을 설정할 수 있는데 권장하는 편이다	
+
+	font-family : 글꼴 이름, 글꼴 유형, 글꼴을 읽어오지 못하면 비슷한 유형으로 가져오기 위함
+
+	글꼴 유형
+	1) serif : 명조 계열
+	2) sans-serif : 고딕 계열
+	3) monospace : 폭과 간격 일정
+	4) fantasy : 화려
+	5) cursive : 필기체 계열
+
+▶ font-size 속성
+	텍스트 크기 지정
+	
+	font-size : 20px, 1rem 등등
+
+▶ font-weight 속성
+	텍스트 굵기 지정
+	
+	font-weight : 100 ~ 900(단위)
+	font-weight : lighter, normal, bold, bolder -> normal과 bold를 많이 사용
+
+▶ font-style 속성
+	텍스트를 기울여 표현할 때 사용
+	
+	font-style : italic (oblique) ;
+
+	italic : 글꼴에서 제공하는 기울여진 글꼴
+	oblique : 원래 글자를 그냥 기울여버림!
+
+▶ text-align 속성
+	텍스트 정렬
+	
+	text-align : 값; (left, center, right, justify)
+
+▶ text-decoration 속성
+	글자의 선을 그을 때 사용
+	
+	text-decoration : 값; (none, line-through, overline, underline)
+
+▶ line-height 속성
+	normal, 1, 100% 20px
+
+
+▷ 박스 모델
+	각각의 요소가 어떤 원리로 웹에 배치되는지를 이해하기 위해서는 박스 모델에 대한 개념을 알아야 한다. 
+	박스 모델은 요소를 감싸고 있는 사각형 형태의 공간을 말하며, 이 친구들을 이용해 원하는 곳에 배치할 수 있다
+	
+	1) margin : 요소의 외부 여백
+	2) border : 요소의 태두리
+	3) padding : 요소의 내부 여백
+	4) content : 요소의 내용
+
+▶ margin, padding
+	요소의 외부, 내부 여백을 설정함으로 전채적인 요소의 배치를 설정할 수 있다
+	
+	margin : 1 2 3 4 top, right, bottom, left
+	margin : 10 20 -> (top, bottom), (right. left)
+	margin-top, margin-right, margin-bottom, margin-left -> 각 속성도 존재
+
+▶ border
+	요소의 테두리를 설정할 수 있다. 
+
+	border : (border-width), (border-style), (color);
+
+	border-width : 테두리 굵기	
+	border-style : 테두리 스타일 (solid, double, dotted 등등)
+
+▶ content
+	width, height -> 높이와 너비를 설정할 수 있다
+	단, 여기의 width와 height는 content영역에 국한된다. 전체 요소의 너비와 길이가 아니다
+	그 이유는 전체 크기는  padding, margin, border를 합산하기 때문이다
+	여기서 해당 요소의 크기를 width와 height만으로 조절하고 싶을 때
+	box-sizing옵션을을 사용할 수 있다
+
+	box-sizing : content-box, border-box
+
+
+
+
+
+
+
+
+
+
+
+
+

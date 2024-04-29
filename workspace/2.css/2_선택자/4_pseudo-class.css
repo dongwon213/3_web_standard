@@ -1,0 +1,22 @@
+
+/* input태그 가상 클래스 건택자 */
+input[name="id"]:focus{
+    color: red;
+    outline: 2px solid red;
+}
+
+input:checked + label{
+    color: blue;
+    background-color: yellow;
+}
+
+input:disabled, button:disabled{
+    background-color: aqua;
+    color: red;
+
+}
+
+input:enabled, button:enabled{
+    background-color: green;
+    color: red;
+}
